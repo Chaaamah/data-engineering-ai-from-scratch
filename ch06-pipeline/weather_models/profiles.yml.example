@@ -1,0 +1,14 @@
+# Copy to profiles.yml in this folder (it is git-ignored), then run dbt with:
+#   dbt run --profiles-dir .
+weather_models:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: de_user
+      password: "{{ env_var('PG_PASSWORD', 'de_password') }}"
+      dbname: warehouse
+      schema: analytics
+      threads: 4

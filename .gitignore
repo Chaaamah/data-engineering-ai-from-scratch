@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets
+.env
+
+# Generated data and outputs
+output/
+data/raw/
+data/processed/
+*.parquet
+ch08-big-data/data/
+mlruns/
+mlartifacts/
+model.joblib
+
+# dbt
+ch06-pipeline/weather_models/target/
+ch06-pipeline/weather_models/logs/
+ch06-pipeline/weather_models/profiles.yml
+
+# Editors
+.vscode/
+.idea/
+.DS_Store

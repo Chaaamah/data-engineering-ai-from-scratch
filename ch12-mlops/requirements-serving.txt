@@ -1,0 +1,8 @@
+# Keep scikit-learn on the same version that trained the model: pickled
+# models are not guaranteed to load across scikit-learn versions.
+fastapi>=0.115
+uvicorn>=0.30
+pandas>=2.2
+scikit-learn>=1.5
+joblib>=1.4
+psycopg[binary]>=3.2

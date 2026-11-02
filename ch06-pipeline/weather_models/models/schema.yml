@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: public
+    tables:
+      - name: weather_hourly
+
+models:
+  - name: daily_weather
+    columns:
+      - name: city
+        data_tests: [not_null]
+      - name: weather_date
+        data_tests: [not_null]
+
+  - name: weekly_rainfall_rank        # solution to exercise 6.3
+    columns:
+      - name: rainfall_rank
+        data_tests: [not_null]

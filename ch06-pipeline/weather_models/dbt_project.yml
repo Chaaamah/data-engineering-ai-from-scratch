@@ -1,0 +1,10 @@
+name: weather_models
+version: "1.0.0"
+config-version: 2
+profile: weather_models
+
+model-paths: ["models"]
+
+models:
+  weather_models:
+    +materialized: table

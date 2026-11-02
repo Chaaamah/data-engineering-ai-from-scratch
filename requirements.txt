@@ -1,0 +1,28 @@
+# Chapters 3-7, 10 and 12
+pandas>=2.2
+pyarrow>=15
+requests>=2.31
+psycopg[binary]>=3.2
+SQLAlchemy>=2.0
+scikit-learn>=1.5
+joblib>=1.4
+pytest>=8
+
+# Chapter 8
+duckdb>=1.1
+pyspark>=3.5
+
+# Chapter 9
+confluent-kafka>=2.5
+
+# Chapter 11
+torch>=2.3
+sentence-transformers>=3.0
+
+# Chapter 12
+mlflow>=2.16
+fastapi>=0.115
+uvicorn>=0.30
+
+# dbt and Airflow are installed in their own virtual environments:
+# see ch06-pipeline/README.md and ch07-orchestration/README.md
